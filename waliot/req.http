@@ -1,0 +1,10 @@
+GET http://127.0.0.1:8888/version
+
+###
+
+GET http://127.0.0.1:8888/detect
+Content-Type: application/json
+
+{
+  "path": "./waliot/images/audi.jpg"
+}
