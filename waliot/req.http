@@ -8,3 +8,20 @@ Content-Type: application/json
 {
   "path": "./waliot/images/audi.jpg"
 }
+
+###
+
+POST http://127.0.0.1:8888/magic
+Content-Type: multipart/form-data; boundary=boundary
+
+--boundary
+Content-Disposition: form-data; name="file"; filename="file"
+
+< ./images/audi.jpg
+--boundary
+Content-Disposition: form-data; name="advertType"
+
+1
+--boundary
+
+###
